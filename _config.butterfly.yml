@@ -6,10 +6,12 @@ menu:
   首页: / || fas fa-home
   精选博客: /archives/ || fas fa-archive
   # : /tags/ || fas fa-tags
-  日常杂谈: /categories/ || fas fa-folder-open
+  # 日常杂谈： /catigories/ || fas fa-folder-open
+  精美壁纸: /gallery/ || fas fa-folder-open
   摸会儿鱼||fas fa-list:
     听音乐: /music/ || fas fa-music
     看视频: /movies/ || fas fa-video
+  留言板: /leavemessage/ || fa fa-paper-plane
   # Link: /link/ || fas fa-link
   # About: /about/ || fas fa-heart
 
@@ -47,7 +49,7 @@ social:
 algolia_search:
   enable: false
   hits:
-    per_page: 6
+    per_page: 4
 
 # Local search
 local_search:
@@ -91,28 +93,29 @@ disable_top_img: false
 index_img: /img/mario.gif
 
 # If the banner of page not setting, it will show the top_img
-default_top_img:
+default_top_img: /img/blog-img34.jpg
 
 # The banner image of archive page
-archive_img:
+archive_img: /img/blog-img31.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
-tag_img:
+tag_img: /img/blog-img34.jpg
 
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img:
+tag_per_img: /img/blog-img34.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
 category_img:
 
+gallery_img: /img/blog-img34.jpg
 # The banner image of category page
 # format:
 #  - category name: xxxxx
-category_per_img:
+category_per_img: /img/blog-img34.jpg
 
 cover:
   # display the cover or not (是否顯示文章封面)
@@ -124,7 +127,8 @@ cover:
   position: both
   # When cover is not set, the default cover is displayed (當沒有設置cover時，默認的封面顯示)
   default_cover:
-    # - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg
+    - https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpgy
+    - /img/blog-img34.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -212,18 +216,18 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  limit: 6 # Number of posts displayed
+  limit: 3 # Number of posts displayed
   date_type: created # or created or updated 文章日期顯示創建日或者更新日
 
 # figcaption (圖片描述文字)
-photofigcaption: false
+photofigcaption: true
 
 # post_pagination (分頁)
 # value: 1 || 2 || false
 # 1: The 'next post' will link to old post
 # 2: The 'next post' will link to new post
 # false: disable pagination
-post_pagination: 1
+post_pagination: 2
 
 # Displays outdated notice for a post (文章過期提醒)
 noticeOutdate:
@@ -261,13 +265,13 @@ addtoany:
 comments:
   # Up to two comments system, the first will be shown as default
   # Choose: Disqus/Disqusjs/Livere/Gitalk/Valine/Waline/Utterances/Facebook Comments/Twikoo/Giscus/Remark42/Artalk
-  use: # Valine,Disqus
+  use: Twikoo,Disqus
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
-  lazyload: false
-  count: false # Display comment count in post's top_img
-  card_post_count: false # Display comment count in Home Page
+  lazyload: true
+  count: true # Display comment count in post's top_img
+  card_post_count: true # Display comment count in Home Page
 
 # disqus
 # https://disqus.com/
@@ -285,8 +289,8 @@ disqusjs:
 
 # livere (來必力)
 # https://www.livere.com/
-livere:
-  uid:
+# livere:
+#   uid: MTAyMC81NzQ0MC8zMzkwNA==
 
 # gitalk
 # https://github.com/gitalk/gitalk
@@ -301,12 +305,13 @@ gitalk:
 # valine
 # https://valine.js.org
 valine:
-  appId: # leancloud application app id
-  appKey: # leancloud application app key
+  enable: false
+  appId: Le4lrfGd7pGwPyKboVbn4d5s-gzGzoHsz
+  appKey: yoOLo8JfOeflGvMnvIraP4S2
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
-  visitor: false
+  visitor: true
   option:
 
 # waline - A simple comment system with backend support fork from Valine
@@ -339,9 +344,9 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId:
-  region:
-  visitor: false
+  envId: https://twikoo-api-iota.vercel.app/
+  region: us-east-1
+  visitor: true
   option:
 
 # Giscus
@@ -376,10 +381,10 @@ artalk:
 
 # Chat Button [recommend]
 # It will create a button in the bottom right corner of website, and hide the origin button
-chat_btn: false
+chat_btn: true
 
 # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
-chat_hide_show: false
+chat_hide_show: true
 
 # chatra
 # https://chatra.io/
@@ -390,8 +395,8 @@ chatra:
 # tidio
 # https://www.tidio.com/
 tidio:
-  enable: false
-  public_key:
+  enable: true
+  public_key: aumhbygu63ufz6cmn5bludxbj6zixpkc
 
 # daovoice
 # http://daovoice.io/
@@ -484,7 +489,7 @@ site_verification:
 
 theme_color:
   enable: true
-  main: "#436871"
+  main: "#41abab"
   paginator: "#3080ab"
   button_hover: "#405894"
   text_selection: "#00c4b6"
@@ -661,7 +666,7 @@ aside:
     category: true
   card_author:
     enable: true
-    description: Don`t Squander It Thinking. DO!
+    description: Don`t Squander It Thinking. Do!
     button:
       enable: true
       icon: fab fa-github
@@ -669,10 +674,10 @@ aside:
       link: https://github.com/Kawul007
   card_announcement:
     enable: true
-    content: Kawuli 个人博客
+    content: 添加了评论功能和在线聊天功能。记得填写邮箱，以便我及时回复。😁🐈
   card_recent_post:
     enable: true
-    limit: 5 # if set 0 will show all
+    limit: 4 # if set 0 will show all
     sort: date # date or updated
     sort_order: # Don't modify the setting unless you know how it works
   card_categories:
@@ -693,7 +698,7 @@ aside:
     limit: 8 # if set 0 will show all
     sort_order: # Don't modify the setting unless you know how it works
   card_webinfo:
-    enable: false
+    enable: true
     post_count: true
     last_push_date: true
     sort_order: # Don't modify the setting unless you know how it works
@@ -701,15 +706,15 @@ aside:
 # busuanzi count for PV / UV in site
 # 訪問人數
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # Time difference between publish date and now (網頁運行時間)
 # Formal: Month/Day/Year Time or Year/Month/Day Time
 runtimeshow:
-  enable: false
-  publish_date: 
+  enable: true
+  publish_date: 7/1/2022 00:00:00 
 
 # Aside widget - Newest Comments
 newest_comments:
@@ -803,14 +808,14 @@ note:
 # It may contain bugs and unstable, give feedback when you find the bugs.
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   exclude:
     # - xxxx
     # - xxxx
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
-  enable: false
+  enable: true
   per_page: true
 
 # Snackbar (Toast Notification 彈窗)
@@ -825,7 +830,7 @@ snackbar:
 
 # https://instant.page/
 # prefetch (預加載)
-instantpage: false
+instantpage: true
 
 # https://github.com/vinta/pangu.js
 # Insert a space between Chinese character and English character (中英文之間添加空格)
@@ -865,8 +870,11 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="/css/video.css"> 
   bottom:
     # - <script src="xxxx"></script>
+      # - <div class="aplayer no-destroy" data-id="7163299025" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-autoplay="true" data-lrcType="-1"> </div>
+
 
 # CDN
 # Don't modify the following settings unless you know how they work

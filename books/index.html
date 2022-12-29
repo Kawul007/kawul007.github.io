@@ -1,0 +1,1356 @@
+<html class="hide-aside" lang="zh-CN" data-theme="light"><head><script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.js"></script>
+<script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script><!-- hexo injector head_begin start --><style type="text/css">.douban-card-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 400px;
+}
+
+.douban-card {
+    display: flex;
+    margin: 30px 10px;
+    padding: 15px;
+    border-radius: 15px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+.douban-card:hover {
+    text-decoration: none;
+}
+
+.douban-card-bgimg {
+    position: absolute;
+    width: 115%;
+    height: 115%;
+    filter: blur(15px) brightness(0.6);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.douban-card-img {
+    position: relative;
+    height: 130px;
+    width: 80px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.douban-card-left:hover .douban-card-img {
+    filter: blur(5px) brightness(0.6);
+    transform: perspective(800px) rotateX(180deg);
+}
+
+.douban-card-left .douban-card-img {
+    transition: all 500ms ease;
+}
+
+.douban-card-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.douban-card-left .douban-card-status {
+    height: 130px;
+    width: 80px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+    transition: all 500ms ease;
+}
+
+.douban-card-left:hover .douban-card-status {
+    transform: perspective(800px) rotateX(0deg);
+}
+
+.douban-card-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    font-size: 16px;
+    font-family: "Courier New", Courier, monospace;
+    line-height: 1.3;
+    color: antiquewhite;
+}
+
+.douban-card-item {
+    margin-top: 4px;
+}
+</style><!-- hexo injector head_begin end --><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>读书？！多读 | kawu の 博客</title><meta name="keywords" content="kawuli kawul kawu"><meta name="author" content="Kawuli"><meta name="copyright" content="Kawuli"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="多多读书，因为我是一个很不容易读完一整本书的人，特别是纸质版，更多的是在上下班过程当中通勤上的听书时间。希望以后多抽出时间看看纸质书籍。
+ 
+ 
+ 
+     
+ .hexo-douban-tabs {
+     margin-bottom: 15px;
+     margin-top: 15px;
+ }
+ 
+ .hexo-douban-tab {
+     p">
+<meta property="og:type" content="website">
+<meta property="og:title" content="读书？！多读">
+<meta property="og:url" content="http://kawul007.github.io/books/index.html">
+<meta property="og:site_name" content="kawu の 博客">
+<meta property="og:description" content="多多读书，因为我是一个很不容易读完一整本书的人，特别是纸质版，更多的是在上下班过程当中通勤上的听书时间。希望以后多抽出时间看看纸质书籍。
+ 
+ 
+ 
+     
+ .hexo-douban-tabs {
+     margin-bottom: 15px;
+     margin-top: 15px;
+ }
+ 
+ .hexo-douban-tab {
+     p">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://kawul007.github.io/img/hh.gif">
+<meta property="article:author" content="Kawuli">
+<meta property="article:tag" content="kawuli kawul kawu">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://kawul007.github.io/img/hh.gif"><link rel="shortcut icon" href="/img/bitbug.ico"><link rel="canonical" href="http://kawul007.github.io/books/"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="//busuanzi.ibruce.info"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '读书？！多读',
+  isPost: false,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-12-29 21:05:01'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/page.css"><link rel="stylesheet" href="/css/modify.css"><link rel="stylesheet" href="/css/video.css"><link rel="stylesheet" href="/css/universe.css"><link ref="stylesheet" href="/css/flip.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&amp;display=swap" rel="stylesheet"><style>#article-container.post-content h1:before, h2:before, h3:before, h4:before, h5:before, h6:before { -webkit-animation: avatar_turn_around 1s linear infinite; -moz-animation: avatar_turn_around 1s linear infinite; -o-animation: avatar_turn_around 1s linear infinite; -ms-animation: avatar_turn_around 1s linear infinite; animation: avatar_turn_around 1s linear infinite; }</style><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/css/main.css"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/hh.gif" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">11</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">6</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-tree"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-earth"></i><span> 博客总览</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-file"></i><span> 总览</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-snowflake"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-fish"></i><span> 摸会儿鱼</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-headphones"></i><span> 听音乐</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 看视频</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-archive"></i><span> 精美壁纸</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-dog"></i><span> 豆瓣</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fa-fw fas fa-comment"></i><span> 碎碎念</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-cat"></i><span> 更多</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/leavemessage/"><i class="fa-fw fas fa-feather"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-heart"></i><span> 链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user-ninja"></i><span> 关于我</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url('/img/blog-img97.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">kawu の 博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-tree"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-earth"></i><span> 博客总览</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-file"></i><span> 总览</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-snowflake"></i><span> 归档</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-fish"></i><span> 摸会儿鱼</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-headphones"></i><span> 听音乐</span></a></li><li><a class="site-page child" href="/videos/"><i class="fa-fw fas fa-video"></i><span> 看视频</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-archive"></i><span> 精美壁纸</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fa fa-dog"></i><span> 豆瓣</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-film"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book"></i><span> 书籍</span></a></li><li><a class="site-page child" href="/artitalk/"><i class="fa-fw fa-fw fas fa-comment"></i><span> 碎碎念</span></a></li></ul></div><div class="menus_item"><a class="site-page group hide" href="javascript:void(0);"><i class="fa-fw fas fa-cat"></i><span> 更多</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/leavemessage/"><i class="fa-fw fas fa-feather"></i><span> 留言</span></a></li><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-heart"></i><span> 链接</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-user-ninja"></i><span> 关于我</span></a></li></ul></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="page-site-info"><h1 id="site-title">读书？！多读</h1></div></header><main class="layout hide-aside" id="content-inner"><div id="page"><div class="top-img" style="background-image: url('/img/blog-img97.jpg');"></div><div class="top-img" style="background-image: url('/img/blog-img97.jpg');"></div><div id="article-container">
+    <meta name="referrer" content="no-referrer">
+
+
+<blockquote>
+    <p>多多读书，因为我是一个很不容易读完一整本书的人，特别是纸质版，更多的是在上下班过程当中通勤上的听书时间。希望以后多抽出时间看看纸质书籍。</p>
+</blockquote>
+
+<style>
+    
+.hexo-douban-tabs {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.hexo-douban-tab {
+    padding: 5px;
+}
+
+.hexo-douban-active {
+    background: #657b83;
+    color: #fff;
+}
+
+.hexo-douban-item {
+    padding-bottom: 10px;
+    position: relative;
+    clear: both;
+    min-height: 170px;
+    padding: 10px 0;
+    border-bottom: 1px #ddd solid;
+}
+
+@media screen and (max-width: 600px) {
+    .hexo-douban-item {
+        width: 100%;
+    }
+}
+
+.hexo-douban-picture {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 100px;
+}
+
+.hexo-douban-info {
+    padding-left: 120px;
+}
+
+.hexo-douban-meta {
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+.hexo-douban-comments {
+    font-size: 12px;
+}
+
+.hexo-douban-pagination {
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.hexo-douban-button {
+    padding: 5px;
+}
+
+.hexo-douban-button:hover {
+    background: #657b83;
+    color: #fff;
+}
+
+.hexo-douban-hide {
+    display: none;
+}
+
+.hexo-douban-show {
+    display: block;
+}
+
+
+</style>
+
+<div class="hexo-douban-tabs">
+    <a class="hexo-douban-tab" id="hexo-douban-tab1" href="javascript:;" rel="external">
+        在读
+        (4)</a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab2" href="javascript:;" rel="external">
+        想读
+        (17)</a>
+    <a class="hexo-douban-tab" id="hexo-douban-tab3" href="javascript:;" rel="external">
+        已读
+        (7)</a>
+</div>
+<div>
+    <div id="hexo-douban-item1">
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s33492346.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/33440205/"> 你当像鸟飞往你的山</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 塔拉·韦斯特弗 / 任爱红 / 南海出版公司 / 2019-10 / 59.00元
+
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      在读 / </div>
+        <div class="hexo-douban-comments">
+      最近在听原版，真的不错啊！
+      
+  
+
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s29428369.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26877749/"> 三四郎</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [日] 夏目漱石 / 吴树文 / 上海译文出版社 / 2017-3-1 / 39.00
+
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      在读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s1070222.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/1008145/"> 围城</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  钱锺书 / 人民文学出版社 / 1991-2 / 19.00
+
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      在读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s1914861.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/1034282/"> 时间简史</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [英] 史蒂芬·霍金 / 许明贤、吴忠超 / 湖南科学技术出版社 / 2010-4 / 45.00元
+
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      在读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">上一页</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">下一页</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">尾页</a>
+</div>
+    </div>
+    <div id="hexo-douban-item2">
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s29799269.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/30172069/"> 失踪的孩子</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [意] 埃莱娜·费兰特 / 陈英 / 人民文学出版社 / 2018-7 / 62.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s33792562.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/35230281/"> 下沉年代</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 乔治·帕克 / 刘冉 / 文汇出版社 / 2021-1 / 108
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s28668834.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26698660/"> 巨人的陨落</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [英] 肯·福莱特 / 于大卫 / 江苏凤凰文艺出版社 / 2016-5-1 / 129.80元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s8935858.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/10488563/"> 宇宙尽头的餐馆</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [英] 道格拉斯·亚当斯 / 姚向辉 / 上海译文出版社 / 2012-4 / 26.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s28033064.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26295448/"> 你一生的故事</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 特德·姜 / 李克勤、王荣生、Bruceyew / 译林出版社 / 2015-5 / 36.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s28336612.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26598807/"> 人鼠之间</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  李天奇 / 上海文艺出版社 / 2016-1-1 / 29.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s2623291.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/2165084/"> 在轮下</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [德] 赫尔曼·黑塞 / 张佑中 / 上海译文出版社 / 2007-7 / 15.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s33732571.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/35217952/"> 你想过怎样的一生？</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [德] 海克·法勒  文、[意] 瓦莱里奥·维达里  图、海克·法勒 / 俞洁琼 / 后浪｜北京联合出版公司 / 2020-11 / 118.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s6980516.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/4238754/"> 失恋33天</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  鲍鲸鲸 / 中信出版社 / 2010-1 / 25.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s29154222.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26879777/"> 在难熬的日子里痛快地活</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [日] 佐野洋子 / 张峻 / 漓江出版社 / 2016-11 / 38.00
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s29376146.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26986954/"> 新名字的故事</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [意] 埃莱娜·费兰特 / 陈英 / 人民文学出版社 / 2017-4 / 59.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s1078958.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/1068920/"> 飘</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img2.doubanio.com/view/subject/s/public/s29452272.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26952166/"> 指匠</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [英] 萨拉·沃特斯 / 阿朗 / 上海人民出版社 / 2017-9 / 65.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s10352055.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/10773358/"> 意志力</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 罗伊·鲍迈斯特、[美] 约翰·蒂尔尼 / 丁丹 / 中信出版社 / 2012-6 / 39.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s33535657.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/34911983/"> 坡道上的家</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [日] 角田光代 / 杨明绮 / 浙江人民出版社 / 2020-1 / 48
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s29775966.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/30230632/"> 哈佛商学院最受欢迎的领导课</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美]罗伯特•史蒂文•卡普兰 / 蔡惠伃 / 中信出版社 / 2018-6 / 68
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s28685416.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/26755503/"> 我可以咬一口吗</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 莉兹·克里莫 / 周高逸 / 天津人民出版社 / 2016-4 / 39.00元
+
+      
+        </div>
+        <div class="hexo-douban-meta">2022-11-08
+      想读 / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">上一页</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">下一页</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">尾页</a>
+</div>
+
+    </div>
+    <div id="hexo-douban-item3">
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s2989248.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/3025917/"> 星期三是藍色的</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  丹尼爾．譚米特 / 錢莉華 / 天下文化 / Jan 30, 2008 / NT$250
+
+      </div>
+        <div class="hexo-douban-meta">2022-11-08
+      读过 /  / ★★★★★ 力荐</div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s6100756.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/4011670/"> 人间失格</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  太宰治 / 许时嘉 / 吉林出版集团 / 2009-9 / 16.00元
+
+      </div>
+        <div class="hexo-douban-meta">2022-11-08
+      读过 /  / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s1727290.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/1770782/"> 追风筝的人</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 卡勒德·胡赛尼 / 李继宏 / 上海人民出版社 / 2006-5 / 29.00元
+
+      </div>
+        <div class="hexo-douban-meta">2022-11-08
+      读过 /  / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s1999119.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/1865089/"> 瓦尔登湖</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 梭罗 / 徐迟 / 上海译文出版社 / 2006-8 / 11.00元
+
+      </div>
+        <div class="hexo-douban-meta">2022-11-08
+      读过 /  / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img9.doubanio.com/view/subject/s/public/s32271204.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/7060185/"> 江城</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [美] 彼得·海斯勒 / 李雪顺 / 上海译文出版社 / 2012-1 / 36.00元
+
+      </div>
+        <div class="hexo-douban-meta">2022-11-08
+      读过 /  / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s2838737.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/1963684/"> 半生缘</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  张爱玲 / 北京十月文艺出版社 / 2006-12 / 28.00元
+
+      </div>
+        <div class="hexo-douban-meta">2022-11-08
+      读过 /  / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-item">
+    <div class="hexo-douban-picture">
+        
+            <img src="/assets/douban-loading.gif" data-src="https://img1.doubanio.com/view/subject/s/public/s27237850.jpg" referrerpolicy="no-referrer">
+        
+    </div>
+    <div class="hexo-douban-info">
+        <div class="hexo-douban-title"><a target="_blank" href="https://book.douban.com/subject/6082808/"> 百年孤独</a></div>
+        <div class="hexo-douban-meta">
+        
+  
+  [哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元
+
+      </div>
+        <div class="hexo-douban-meta">2022-11-08
+      读过 /  / </div>
+        <div class="hexo-douban-comments">
+  </div>
+    </div>
+</div>
+
+        
+        <div class="hexo-douban-pagination">
+    <a class="hexo-douban-button hexo-douban-firstpage" href="javascript:;"> 首页</a>
+    <a class="hexo-douban-button hexo-douban-previouspage" href="javascript:;">上一页</a>
+    <span class="hexo-douban-pagenum">2 / 3</span>
+    <a class="hexo-douban-button hexo-douban-nextpage" href="javascript:;">下一页</a>
+    <a class="hexo-douban-button hexo-douban-lastpage" href="javascript:;">尾页</a>
+</div>
+    </div>
+
+</div>
+
+<script>
+    (() => {
+        /**
+ * Created by myths on 18-2-8.
+ */
+
+Element.prototype.siblings = function () {
+  const siblingElement = []
+  const sibs = this.parentNode.children
+  for (let i = 0; i < sibs.length; i++) {
+    if (sibs[i] !== this) {
+      siblingElement.push(sibs[i])
+    }
+  }
+  return siblingElement
+}
+function tabClick () {
+  // 修改标签样式
+  this.classList.add('hexo-douban-active')
+  let sibs = this.siblings()
+  for (let j = 0; j < sibs.length; j++) {
+    sibs[j].classList.remove('hexo-douban-active')
+  }
+  // 显示对应板块
+  const itemId = this.id.replace('tab', 'item')
+  const target = document.getElementById(itemId)
+  target.classList.remove('hexo-douban-hide')
+  target.classList.add('hexo-douban-show')
+  sibs = document.getElementById(itemId).siblings()
+  for (let k = 0; k < sibs.length; k++) {
+    sibs[k].classList.remove('hexo-douban-show')
+    sibs[k].classList.add('hexo-douban-hide')
+  }
+}
+const tabs = document.getElementsByClassName('hexo-douban-tab')
+for (let i = 0; i < tabs.length; i++) {
+  tabs[i].onclick = tabClick
+  tabs[i].onclick.apply(tabs[i])
+}
+tabs[2].click()
+
+        const firstpages = document.getElementsByClassName('hexo-douban-firstpage')
+const previouspages = document.getElementsByClassName('hexo-douban-previouspage')
+const nextpages = document.getElementsByClassName('hexo-douban-nextpage')
+const lastpages = document.getElementsByClassName('hexo-douban-lastpage')
+const pagenums = document.getElementsByClassName('hexo-douban-pagenum')
+
+function makePageNum (num, arr) {
+  return (num + 1) + ' / ' + (Math.ceil(arr.length / 10 === 0 ? 1 : Math.ceil(arr.length / 10)))
+}
+
+function firstBtn () {
+  const sibs = this.parentNode.siblings()
+  displayPage(sibs, 0)
+  this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(0, sibs)
+}
+
+function previousBtn () {
+  const sibs = this.parentNode.siblings()
+  let currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText
+  currNum = currNum.substr(0, currNum.indexOf('/') - 1)
+  currNum = parseInt(currNum, 10) - 1
+  if (currNum > 0) {
+    currNum--
+  }
+  displayPage(sibs, currNum)
+  this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs)
+}
+
+function nextBtn () {
+  const sibs = this.parentNode.siblings()
+  let currNum = this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText
+  currNum = currNum.substr(0, currNum.indexOf('/') - 1)
+  currNum = parseInt(currNum, 10) - 1
+  if (currNum < Math.ceil(sibs.length / 10) - 1) {
+    currNum++
+  }
+  displayPage(sibs, currNum)
+  this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(currNum, sibs)
+}
+
+function lastBtn () {
+  const sibs = this.parentNode.siblings()
+  displayPage(sibs, Math.ceil(sibs.length / 10) - 1)
+  this.parentNode.getElementsByClassName('hexo-douban-pagenum')[0].innerText = makePageNum(Math.ceil(sibs.length / 10) - 1 === -1 ? 0 : Math.ceil(sibs.length / 10) - 1, sibs)
+}
+
+function displayPage (arr, num) {
+  for (let i = 0; i < arr.length; i++) {
+    if (Math.floor(i / 10) === num) {
+      arr[i].classList.remove('hexo-douban-hide')
+      const img = arr[i].getElementsByTagName('img')[0]
+      img.src = img.getAttribute('data-src')
+    } else {
+      arr[i].classList.add('hexo-douban-hide')
+    }
+  }
+}
+
+for (let i = 0; i < firstpages.length; i++) {
+  // add listener
+  firstpages[i].onclick = firstBtn
+  previouspages[i].onclick = previousBtn
+  nextpages[i].onclick = nextBtn
+  lastpages[i].onclick = lastBtn
+
+  // set page num
+  const size = pagenums[i].parentNode.siblings().length
+  pagenums[i].innerText = '1 / ' + (Math.ceil(size / 10) === 0 ? 1 : Math.ceil(size / 10))
+  firstpages[i].click()
+}
+
+    })()
+</script>
+
+</div><hr><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div></main><footer id="footer" style="background: transparent"><div id="footer-wrap"><div class="copyright">©2020 - 2022 By Kawuli</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="chat_btn" type="button" title="聊天"><i class="fas fa-sms"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><div class="js-pjax"><script>(() => {
+  const $mermaidWrap = document.querySelectorAll('#article-container .mermaid-wrap')
+  if ($mermaidWrap.length) {
+    window.runMermaid = () => {
+      window.loadMermaid = true
+      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
+
+      Array.from($mermaidWrap).forEach((item, index) => {
+        const mermaidSrc = item.firstElementChild
+        const mermaidThemeConfig = '%%{init:{ \'theme\':\'' + theme + '\'}}%%\n'
+        const mermaidID = 'mermaid-' + index
+        const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
+        mermaid.mermaidAPI.render(mermaidID, mermaidDefinition, (svgCode) => {
+          mermaidSrc.insertAdjacentHTML('afterend', svgCode)
+        })
+      })
+    }
+
+    const loadMermaid = () => {
+      window.loadMermaid ? runMermaid() : getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaid)
+    }
+
+    window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
+  }
+})()</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.kawul007.top/',
+      region: 'us-east-1',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.kawul007.top/',
+      region: 'us-east-1',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js" integrity="sha512-byzUdBXaTSrgrlWDvkyU6TBkRSUUiI3EzVIdZtrYEUx1hFnsel9QmEs3QWpKo+8N+G9eOjSxQzFWF1PLq0+WVw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script defer="" src="/js/flip.js"></script><canvas id="universe"></canvas><script defer="" src="/js/universe.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="Hi,今天,学习了没？,Dont worry,Smile" data-fontsize="15px" data-random="true" async="async"></script><script src="//code.tidio.co/aumhbygu63ufz6cmn5bludxbj6zixpkc.js" async="async"></script><script>function onTidioChatApiReady() {
+  window.tidioChatApi.hide();
+  window.tidioChatApi.on("close", function() {
+    window.tidioChatApi.hide();
+  });
+}
+if (window.tidioChatApi) {
+  window.tidioChatApi.on("ready", onTidioChatApiReady);
+} else {
+  document.addEventListener("tidioChat-ready", onTidioChatApiReady);
+}
+
+var chatBtnFn = () => {
+  document.getElementById("chat_btn").addEventListener("click", function(){
+    window.tidioChatApi.show();
+    window.tidioChatApi.open();
+  });
+}
+chatBtnFn()
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async="" data-pjax="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax="">if(document.getElementsByClassName('recent-posts')[0] && (location.pathname ==='/tags'|| '/tags' ==='all')){
+    var parent = document.getElementsByClassName('recent-posts')[0];
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="http://kawul007.github.io/tags/前端相关/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🐈 kawuの前端狂补！ (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://kawul007.github.io/tags/计算机网络/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🌍 kawuの基础整理！ (6)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="http://kawul007.github.io/tags/日常/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🐱‍👓 kawuの生活趣事！ (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><a class="magnet_link_more"  href="http://kawul007.github.io/tags" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #f2f2f2;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: #b30070}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax="">function history_calendar_injector_config(){
+                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+                var item_html = '<div class="card-widget card-history"><div class="card-content"><div class="item-headline"><i class="fas fa-clock fa-spin"></i><span>那年今日</span></div><div id="history-baidu" style="height: 100px;overflow: hidden"><div class="history_swiper-container" id="history-container" style="width: 100%;height: 100%"><div class="swiper-wrapper" id="history_container_wrapper" style="height:20px"></div></div></div></div>';
+                console.log('已挂载history_calendar')
+                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
+                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
+            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
+
+            history_calendar_injector_config()
+        } </script><script data-pjax="" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-card-history/baiduhistory/js/main.js"></script><script data-pjax="">
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/21eaa247.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="/img/blog-img51.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-07-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/21eaa247.html&quot;);" href="javascript:void(0);" alt="">CSS布局--Grid布局</a><div class="blog-slider__text">要是早点会用grid布局多好！可以省下很多时间做网页整体布局🤡</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/21eaa247.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/cd7ec1b.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="/img/blog-img64.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-07-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/cd7ec1b.html&quot;);" href="javascript:void(0);" alt="">计算机网络-综述</a><div class="blog-slider__text">计算机网络复习内容，整理在这里方便后续查看~</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/cd7ec1b.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/8baa85b6.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="/img/blog-img30.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-07-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/8baa85b6.html&quot;);" href="javascript:void(0);" alt="">CSS布局--浮动Float</a><div class="blog-slider__text">用对float布局便会发现一个新世界~搞出更多有趣布局啦🥳</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/8baa85b6.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;post/2784a893.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src="/img/blog-img101.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-07-14</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;post/2784a893.html&quot;);" href="javascript:void(0);" alt="">CSS布局--FlexBox</a><div class="blog-slider__text">flexbox是前端开发当中最为常见的布局之一，掌握它拿下好看的瀑布流不在话下！🤩</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;post/2784a893.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer="" src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer="" data-pjax="" src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script async="" src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><script data-pjax="" src="https://cdn.cbd.int/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax="">
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('recent-posts');
+      var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("https://github.anzhiy.cn/api?kawul007",['#ebedf0', '#fdcdec', '#fc9bd9', '#fa6ac5', '#f838b2', '#f5089f', '#c4067e', '#92055e', '#540336', '#48022f', '#30021f'],'kawul007')
+    }
+  </script><!-- hexo injector body_end end --></body></html>

@@ -1,0 +1,33 @@
+/*视频适配*/
+.video{
+    position: relative;
+    width: 100%;
+    height: 100%;              /*高度设置这里无效，设置为0，用padding撑开div*/
+          
+}
+.video ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.viedo ul li{
+    list-style: none;
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+ 
+   
+}
+.video ul li iframe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}

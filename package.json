@@ -12,21 +12,53 @@
     "version": "6.3.0"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "hexo": "^6.3.0",
     "hexo-abbrlink": "^2.2.1",
+    "hexo-butterfly-article-double-row": "^1.0.2",
+    "hexo-butterfly-artitalk": "^1.0.4",
+    "hexo-butterfly-artitalk-pro": "^1.0.5",
+    "hexo-butterfly-categories-card": "^1.0.0",
     "hexo-butterfly-douban": "^1.2.5",
+    "hexo-butterfly-swiper": "^1.0.12",
+    "hexo-butterfly-tag-plugins-plus": "^1.0.17",
+    "hexo-calendar": "^1.0.6",
+    "hexo-daodao": "^1.1.0",
+    "hexo-daodao-plus": "^2.2.4",
     "hexo-deployer-git": "^3.0.0",
+    "hexo-douban-card": "^1.4.0",
+    "hexo-electric-clock": "^1.1.0",
+    "hexo-filter-gitcalendar": "^1.0.9",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
     "hexo-generator-tag": "^1.0.0",
+    "hexo-githubcalendar": "^1.2.3",
+    "hexo-history-calendar": "^1.0.3",
+    "hexo-magnet": "^1.0.9",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^6.0.0",
+    "hexo-renderer-kramed": "^0.1.4",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-tag-aplayer": "^3.0.4",
     "hexo-theme-butterfly": "^4.4.0",
-    "hexo-theme-landscape": "^0.0.3"
+    "hexo-theme-landscape": "^0.0.3",
+    "hexo-wordcount": "^6.0.1"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kawul007/kawul007.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kawul007/kawul007.github.io/issues"
+  },
+  "homepage": "https://github.com/Kawul007/kawul007.github.io#readme",
+  "description": "",
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.6"
   }
 }

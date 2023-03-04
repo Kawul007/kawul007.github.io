@@ -1,0 +1,29 @@
+- class_name: 即刻短文
+  essay_list:
+    - content: 终于把相册集搞定了, 耶✌️, 瀑布流在滑动滚动条一个视口范围上下100的情况执行一次, 到底部停止监听让性能高了好多，再也不会布局混乱🤪了
+      date: 2022/10/25
+      link: https://anzhiy.cn/album/
+    - content: 搜索🔍支持缩略图显示啦（默认获取文章内容的第一张图片）
+      date: 2022/10/23 08:00:00
+      from: 安知鱼
+    - content: 遇见彩虹🌈吃定彩虹
+      date: 2022/10/23 10:00:00
+      image:
+        - https://image.anzhiy.cn/adminuploads/1/2022/10/23/6354ea92960ef.webp
+    - content: ThreeJs API真多丫
+      date: 2022/10/19
+    - content: 她画的老妈真的好丑哈哈哈哈哈哈，但是真的可以一眼认出来哎hhhhhh
+      date: 2022/10/03
+      image:
+        - https://image.anzhiy.cn/adminuploads/1/2022/10/19/634f5767b8125.webp
+    - content: 妹妹强制要求我买走了她的两幅画 -¥30
+      date: 2022/10/02
+      image:
+        - https://image.anzhiy.cn/adminuploads/1/2022/10/19/634f5764309ba.jpeg
+        - https://image.anzhiy.cn/adminuploads/1/2022/10/19/634f57643fe42.jpeg
+        - https://image.anzhiy.cn/adminuploads/1/2022/10/19/634f576430cb9.jpeg
+    - content: 歌曲推荐
+      date: 2022/09/25
+      aplayer:
+        server: tencent
+        id: 001FGQba3i10mw

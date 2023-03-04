@@ -1,0 +1,45 @@
+{
+  "movie": [
+    {
+      "status": "灯影绰约",
+      "title": "蜡笔小新：谜团！花之天下春日部学院映画クレヨンしんちゃん謎メキ！花の天カス学園(2021)",
+      "director": "高桥涉",
+      "actors": "小林由美子/林玉绪",
+      "publishDate": "2021-07-30(日本)",
+      "rate": "9.0",
+      "img": "https://images.weserv.nl/?url=https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2666651888.jpg",
+      "url": "https://movie.douban.com/subject/35286583"
+    },
+    {
+      "status": "灯影绰约",
+      "title": "祝你好运，里奥·格兰德GoodLucktoYou,LeoGrande(2022)",
+      "director": "苏菲·海德",
+      "actors": "艾玛·汤普森/达利尔·麦克科马克",
+      "publishDate": "2022-01-21(圣丹斯电影节)",
+      "rate": "8.2",
+      "img": "https://images.weserv.nl/?url=https://img2.doubanio.com/view/photo/s_ratio_poster/public/p2872943472.jpg",
+      "url": "https://movie.douban.com/subject/35235813"
+    }
+  ],
+  "book": [
+    {
+      "status": "见字如晤",
+      "title": "你当像鸟飞往你的山",
+      "author": "[美]塔拉·韦斯特弗",
+      "publishDate": "2019-10",
+      "rate": "8.7",
+      "img": "https://images.weserv.nl/?url=https://img9.doubanio.com/view/subject/s/public/s33492346.jpg",
+      "url": "https://book.douban.com/subject/33440205"
+    },
+    {
+      "status": "见字如晤",
+      "title": "三四郎",
+      "author": "[日]夏目漱石",
+      "publishDate": "2017-3-1",
+      "rate": "8.4",
+      "img": "https://images.weserv.nl/?url=https://img1.doubanio.com/view/subject/s/public/s29428369.jpg",
+      "url": "https://book.douban.com/subject/26877749"
+    }
+  ],
+  "music": []
+}

@@ -1,0 +1,18 @@
+class:
+  class_name: 常用网站~~简直就是宝🎉😁
+  link_list:
+    1:
+      name: Super-Music
+      link: https://www.jango.com/
+      avatar: /img/jango.png
+      descr: 🎧人格，Die for music
+    2:
+      name: Follow Me
+      link: https://github.com/kawul007
+      avatar: /img/jump.gif
+      descr: Source Code Here
+    3:
+      name: Kawu`s-Web
+      link: https://kawul007.github.io
+      avatar: /img/profile.png
+      descr: Hi,It's me! Didi

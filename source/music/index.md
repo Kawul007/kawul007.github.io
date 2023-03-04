@@ -1,9 +1,11 @@
 ---
 title: Listen Music to Chill
 aplayer: true
+type: music
 date: 2022-10-16 10:35:09
-top_img: /img/preview.gif
-cover: /img/preview.gif
+top_img: /img/mu.gif
+cover: /img/mu.gif
+aside: false
 ---
 
 
